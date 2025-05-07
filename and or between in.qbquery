@@ -1,0 +1,28 @@
+﻿create database user;
+
+use user;
+
+SELECT * FROM student s;
+
+insert into student values(101,'priyanka ','pune'),(102,'Anshika','sangli'),(103,'Vinit','Nashik'),(104,'Digambar','kolhapur');
+
+select *from student;
+
+ #comparison operator
+select *from student where roll_no=101;
+
+select *from student where roll_no>102; #gives records whose roll no is greater than 102---->103 104
+
+select *from student where roll_no<103 ;#gives records whose roll no is less than 103--->101 102
+
+select *from student where roll_no<>107;
+
+select *from student where roll_no=101 and roll_no=102;   #it won't give any record
+
+select *from student where roll_no=101 and name='priyanka';  #give record for 101 and priyanka bcz both conditions are true
+
+select *from student where roll_no=102  or roll_no=103;
+
+select *from student where roll_no between 101 and 104;  # gives record between 101 to 104 including 101 & 104 inclusive
+
+select *from student where roll_no in(101,102,103);

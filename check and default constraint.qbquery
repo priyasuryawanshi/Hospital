@@ -1,0 +1,15 @@
+﻿use test;
+
+desc student;
+
+create table employee(eid int ,ename varchar(20),age int,constraint check(age>18));
+
+desc employee;
+
+insert into employee values(101,'priyanka',17);
+
+select *from employee;
+
+alter table employee
+modify eid int default 100;
+
